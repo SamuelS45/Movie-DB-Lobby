@@ -1,4 +1,4 @@
-import {useState, useContext } from "react";
+import {useState, useContext, useEffect } from "react";
 // import Card from '../components/card.css'
 import MovieContext from "./Movie.Context";
 import '../components/card.css'
@@ -93,6 +93,13 @@ function Home(){
             }</div>
     </div>
     )
+    const[load,setLoad] = useState(0)
+    load==100?undefined:setTimeout(()=>{setLoad(load+1)},12)
+    useEffect(()=>{
+        console.log(load)
+        // load==0?setLoad(100):setTimeout(()=>{setLoad(load-1)},1000)
+        // load==undefined?setLoad(0):''
+    })
     // const favMap = fav.map((items)=><button key={items.id} onClick={()=>favHandler(items)}>{items.title||items.name}</button>)
     // const moviesMap = movies.map((items)=><button key={items.id} onClick={()=>favHandler(items)}>{items.title}</button>)
     return(
@@ -110,8 +117,28 @@ function Home(){
             }}>
                 <h1>{search}</h1>
             </div>
+            
             <div className="movie-poster">
-            {page==undefined?moviesMap:favMap}
+            {load==100?
+            page==undefined?moviesMap:favMap :
+                < div style={{
+                    display:'flex',
+                    justifyContent:'center',
+                    alignContent:'center',
+                    width:`${load}px`,
+                    height:`${load}px`,
+                    // height:`100px`,
+                    backgroundColor:'#200122',
+                    transition:'.1s',
+                    borderRadius:`100%`,
+            }}>
+                <h3 style={{
+                    display:'flex',
+                    // height:'50px',
+                    alignItems:'center',
+                    justifyContent:'center'
+                }}>{load}%</h3>
+            </div>}
             </div>
         </div>
     )
