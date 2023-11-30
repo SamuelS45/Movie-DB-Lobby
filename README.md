@@ -5,7 +5,7 @@
 
 ## Technologies Used
 + React JS
-+ CSS
++ CSS Written from Scratch
 + HTML
 + Javascript
  # How to Install and Run the Project
