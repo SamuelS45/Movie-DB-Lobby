@@ -1,13 +1,12 @@
 # Movie-DB-Lobby
 
  ## Description
- A movie Lobby with Using TMDB API to create a mobile and desktop friendly UI interface
+ A movie Lobby with Using TMDB API to create a mobile and desktop friendly UI interface to access a movie system.
 
  ## Table of Contents
 
 ## Technologies Used
 + React JS
-+ Vite
 + CSS
 + HTML
 + Javascript
@@ -18,20 +17,17 @@
 
 ### rootfolder: movie-db-lobby
 
-+ Run
+1. After opening root folder
++ Run in terminal to install modules and depedncies for the project to run
 ```
 npm install
 ```
-
-
-1. After opening root folder
-
++ then run "npm run dev" in terminal to start the React Project
 ```
 npm run dev
 ```
 
-
-in terminal to start Project
++ Happy Coding!!!
 
  # How to Use the Project
  The project can be used for making a movie or streaming service app. The features now are rudimentary but can be expanded to include many things. 
