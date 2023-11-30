@@ -108,7 +108,7 @@ function Home(){
             <div className="nav-container">
 
                 <button className="nav-link" onClick={()=>pageHandler(undefined)}>Home</button>
-                <button className="nav-link" onClick={()=>pageHandler('Hi')}>Fav</button>
+                <button className="nav-link" onClick={()=>pageHandler('Hi')}>Favorite</button>
 
             </div>
             <div style={{
