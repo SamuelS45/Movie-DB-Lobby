@@ -94,7 +94,7 @@ function Home(){
     </div>
     )
     const[load,setLoad] = useState(0)
-    load==100?undefined:setTimeout(()=>{setLoad(load+1)},12)
+    load==100?undefined:setTimeout(()=>{setLoad(load+1)},15)
     useEffect(()=>{
         console.log(load)
         // load==0?setLoad(100):setTimeout(()=>{setLoad(load-1)},1000)
