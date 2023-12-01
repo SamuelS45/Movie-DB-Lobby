@@ -97,11 +97,9 @@ function Home(){
     load==100?undefined:setTimeout(()=>{setLoad(load+1)},15)
     useEffect(()=>{
         console.log(load)
-        // load==0?setLoad(100):setTimeout(()=>{setLoad(load-1)},1000)
-        // load==undefined?setLoad(0):''
+    
     })
-    // const favMap = fav.map((items)=><button key={items.id} onClick={()=>favHandler(items)}>{items.title||items.name}</button>)
-    // const moviesMap = movies.map((items)=><button key={items.id} onClick={()=>favHandler(items)}>{items.title}</button>)
+    
     return(
         <div className="home-container">
             {/* <Nav/> */}

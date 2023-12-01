@@ -17,7 +17,6 @@ function App() {
       const info ={
           method:'GET',
           url:`https://api.themoviedb.org/3/trending/all/day?api_key=bc03ddbb3f3c8d80d4303b77c7f00db0`,
-          // url:'https://jsonplaceholder.typicode.com/todos/1'
       }
       
       await axios(info).then(res=>{
@@ -36,7 +35,6 @@ function App() {
       const info ={
           method:'GET',
           url:`https://api.themoviedb.org/3/search/movie?api_key=bc03ddbb3f3c8d80d4303b77c7f00db0&query=${search}`,
-          // url:'https://jsonplaceholder.typicode.com/todos/1'
       }
       search==''?alert('Type text in search'):
 
@@ -54,10 +52,7 @@ function App() {
     setFav(...fav=> [fav,newFav])
   }
   useEffect(()=>{
-      handleAPI()
-      
-      
-      // console.log('Fuck off')
+      handleAPI()      
   },[])
   return(
     <div className='app-container'>
