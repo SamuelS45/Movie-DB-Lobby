@@ -1,11 +1,12 @@
 # Movie-DB-Lobby
 
  ## Description
- A movie Lobby Using TMDB API to create a mobile and desktop friendly UI interface to access a movie system.
+ A movie Lobby Using TMDB API to create a mobile and desktop friendly UI interface to access a movie system. All built from the ground up.
+
 
 ## Technologies Used
-+ React JS
-+ CSS Written from Scratch
++ React 
++ CSS 
 + HTML
 + Javascript
  # How to Install and Run the Project
@@ -50,6 +51,10 @@ Card-->Card Data --> Fav useState--> Favourite Page
 ---
 ### State Managment 
 The State is managed using React useContext to call the TMDB API and load the data into the parent component useState which enables the child compoennts to be able to access the Data.
+
+ # Creator
+ Samuel Stevenson
+
  # License
 
  GNU General Public License v2.0
